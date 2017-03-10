@@ -8,14 +8,18 @@
 
 #import "ReaderContentView+ReaderKitHook.h"
 #import "ReaderKitHook.h"
+#import "ReaderContentPage+ReaderKitHook.h"
 
 @implementation ReaderContentView (ReaderKitHook)
 
 @dynamic magnifierView;
 @dynamic magniferLongPressCount;
+@dynamic contentPage;
+
 
 static char magnifierViewKey;
 static char magniferLongPressCountKey;
+
 
 #pragma mark - Property
 - (EUMagnifierView *)magnifierView
@@ -28,6 +32,18 @@ static char magniferLongPressCountKey;
     objc_setAssociatedObject(self, &magnifierViewKey, magnifierView, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
+- (int)magniferLongPressCount
+{
+    return [objc_getAssociatedObject(self, &magniferLongPressCountKey) intValue];
+}
+
+- (void)setMagniferLongPressCount:(int)magniferLongPressCount
+{
+    objc_setAssociatedObject(self, &magniferLongPressCountKey, [NSNumber numberWithInt:magniferLongPressCount],  OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+
+
+
 + (void)load {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
@@ -39,6 +55,11 @@ static char magniferLongPressCountKey;
         //        SEL swiDisappear = @selector(euhook_viewDidDisappear:);
         //        [ReaderKitHook swizzlingInClass:[self class] originalSelector:oriDisappear swizzledSelector:swiDisappear];
     });
+}
+
+- (ReaderContentPage *)contentPage
+{
+    return [self valueForKey:@"theContentPage"];
 }
 
 - (instancetype)hook_initWithFrame:(CGRect)frame fileURL:(NSURL *)fileURL page:(NSUInteger)page password:(NSString *)phrase
@@ -79,7 +100,7 @@ static char magniferLongPressCountKey;
             self.magniferLongPressCount = 1;
             [self.magnifierView setNeedsDisplay];
             
-//            [theContentPage updateFocusLayer:[recognizer locationInView:theContentView]];
+            [self.contentPage updateFocusLayer:[recognizer locationInView:self.contentPage]];
             
         }
             break;
@@ -90,7 +111,7 @@ static char magniferLongPressCountKey;
                 [self.magnifierView setNeedsDisplay];
                 self.magniferLongPressCount++;
                 
-//                    [theContentView updateFocusLayer:[recognizer locationInView:theContentView]];
+                    [self.contentPage updateFocusLayer:[recognizer locationInView:self.contentPage]];
                 
                 
             }
@@ -119,5 +140,6 @@ static char magniferLongPressCountKey;
             break;
     }    
 }
+
 
 @end

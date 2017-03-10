@@ -9,10 +9,12 @@
 #import <UIKit/UIKit.h>
 #import <vfrReader/ReaderContentView.h>
 #import "EUMagnifierView.h"
+
+
 @interface ReaderContentView (ReaderKitHook)
-{
-    ReaderContentPage *theContentPage;
-}
+
 @property (nonatomic, strong) EUMagnifierView *magnifierView;
 @property (nonatomic) int magniferLongPressCount;
+@property (nonatomic, strong) ReaderContentPage *contentPage;
+
 @end
