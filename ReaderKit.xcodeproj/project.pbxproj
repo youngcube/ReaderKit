@@ -26,7 +26,6 @@
 		861A5C0E1E7514FF00560E3A /* ReaderViewController+ReaderKit.mm in Sources */ = {isa = PBXBuildFile; fileRef = 861A5BC01E74EF6300560E3A /* ReaderViewController+ReaderKit.mm */; };
 		861A5C0F1E7514FF00560E3A /* ReaderDocument+ReaderKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 861A5C001E750D9F00560E3A /* ReaderDocument+ReaderKit.m */; };
 		861A5C101E7514FF00560E3A /* REKMagnifierView.mm in Sources */ = {isa = PBXBuildFile; fileRef = BF3FD0911E72AE47008963FF /* REKMagnifierView.mm */; };
-		861A5C121E7514FF00560E3A /* Pods_ReaderKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0212F32A5B0F245E930EE10D /* Pods_ReaderKit.framework */; };
 		861A5C141E7514FF00560E3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF3FD07A1E7291CD008963FF /* LaunchScreen.storyboard */; };
 		861A5C151E7514FF00560E3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF3FD0781E7291CD008963FF /* Assets.xcassets */; };
 		861A5C211E75151A00560E3A /* ReaderKitManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 861A5BB91E7463F500560E3A /* ReaderKitManager.mm */; };
@@ -40,7 +39,6 @@
 		861A5C291E75151A00560E3A /* ReaderViewController+ReaderKit.mm in Sources */ = {isa = PBXBuildFile; fileRef = 861A5BC01E74EF6300560E3A /* ReaderViewController+ReaderKit.mm */; };
 		861A5C2A1E75151A00560E3A /* ReaderDocument+ReaderKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 861A5C001E750D9F00560E3A /* ReaderDocument+ReaderKit.m */; };
 		861A5C2B1E75151A00560E3A /* REKMagnifierView.mm in Sources */ = {isa = PBXBuildFile; fileRef = BF3FD0911E72AE47008963FF /* REKMagnifierView.mm */; };
-		861A5C2D1E75151A00560E3A /* Pods_ReaderKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0212F32A5B0F245E930EE10D /* Pods_ReaderKit.framework */; };
 		861A5C2F1E75151A00560E3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF3FD07A1E7291CD008963FF /* LaunchScreen.storyboard */; };
 		861A5C301E75151A00560E3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF3FD0781E7291CD008963FF /* Assets.xcassets */; };
 		861A5C3C1E75151C00560E3A /* ReaderKitManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 861A5BB91E7463F500560E3A /* ReaderKitManager.mm */; };
@@ -54,7 +52,6 @@
 		861A5C441E75151C00560E3A /* ReaderViewController+ReaderKit.mm in Sources */ = {isa = PBXBuildFile; fileRef = 861A5BC01E74EF6300560E3A /* ReaderViewController+ReaderKit.mm */; };
 		861A5C451E75151C00560E3A /* ReaderDocument+ReaderKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 861A5C001E750D9F00560E3A /* ReaderDocument+ReaderKit.m */; };
 		861A5C461E75151C00560E3A /* REKMagnifierView.mm in Sources */ = {isa = PBXBuildFile; fileRef = BF3FD0911E72AE47008963FF /* REKMagnifierView.mm */; };
-		861A5C481E75151C00560E3A /* Pods_ReaderKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0212F32A5B0F245E930EE10D /* Pods_ReaderKit.framework */; };
 		861A5C4A1E75151C00560E3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF3FD07A1E7291CD008963FF /* LaunchScreen.storyboard */; };
 		861A5C4B1E75151C00560E3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF3FD0781E7291CD008963FF /* Assets.xcassets */; };
 		861A5C551E751A4A00560E3A /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = 861A5C541E751A4A00560E3A /* tessdata */; };
@@ -73,12 +70,10 @@
 		BF3FD08C1E72A776008963FF /* ReaderContentView+ReaderKit.mm in Sources */ = {isa = PBXBuildFile; fileRef = BF3FD08B1E72A776008963FF /* ReaderContentView+ReaderKit.mm */; };
 		BF3FD08F1E72A79D008963FF /* ReaderKitHook.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3FD08E1E72A79D008963FF /* ReaderKitHook.m */; };
 		BF3FD0921E72AE47008963FF /* REKMagnifierView.mm in Sources */ = {isa = PBXBuildFile; fileRef = BF3FD0911E72AE47008963FF /* REKMagnifierView.mm */; };
-		CFB88E1830F4AFB555B39094 /* Pods_ReaderKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0212F32A5B0F245E930EE10D /* Pods_ReaderKit.framework */; };
 		F512D6ECF4769991ED4ADB62 /* Pods_ReaderKit_en.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBE62B52BA702B966FA6FA10 /* Pods_ReaderKit_en.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0212F32A5B0F245E930EE10D /* Pods_ReaderKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReaderKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		05156E536D2ECBA4574E148F /* Pods-ReaderKit_de.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReaderKit_de.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReaderKit_de/Pods-ReaderKit_de.debug.xcconfig"; sourceTree = "<group>"; };
 		411CAC88F495C788E7A2E70D /* Pods-ReaderKit_en.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReaderKit_en.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReaderKit_en/Pods-ReaderKit_en.release.xcconfig"; sourceTree = "<group>"; };
 		6AA3F79A8BA241EACCD90408 /* Pods-ReaderKit_en.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReaderKit_en.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReaderKit_en/Pods-ReaderKit_en.debug.xcconfig"; sourceTree = "<group>"; };
@@ -112,10 +107,8 @@
 		861A5C691E751B3000560E3A /* ReaderKit_en.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReaderKit_en.pch; sourceTree = "<group>"; };
 		861A5C6A1E751B3800560E3A /* ReaderKit_es.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReaderKit_es.pch; sourceTree = "<group>"; };
 		861A5C6B1E751B3F00560E3A /* ReaderKit_fr.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReaderKit_fr.pch; sourceTree = "<group>"; };
-		8977A71E13225EDBC662AED5 /* Pods-ReaderKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReaderKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReaderKit/Pods-ReaderKit.debug.xcconfig"; sourceTree = "<group>"; };
 		9F7D713FE2FAAE4446043D4E /* Pods_ReaderKit_fr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReaderKit_fr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3695AC61F12D2A2DF57FC6E /* Pods-ReaderKit_fr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReaderKit_fr.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReaderKit_fr/Pods-ReaderKit_fr.release.xcconfig"; sourceTree = "<group>"; };
-		B7115EC08ABED68B8DF0372E /* Pods-ReaderKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReaderKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReaderKit/Pods-ReaderKit.release.xcconfig"; sourceTree = "<group>"; };
 		BE5156E27EF86A01B0652C44 /* Pods-ReaderKit_es.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReaderKit_es.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReaderKit_es/Pods-ReaderKit_es.debug.xcconfig"; sourceTree = "<group>"; };
 		BF3FD0691E7291CD008963FF /* ReaderKit_en.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReaderKit_en.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF3FD06D1E7291CD008963FF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -140,7 +133,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				861A5C121E7514FF00560E3A /* Pods_ReaderKit.framework in Frameworks */,
 				36D6D2411C98B9EA6C126950 /* Pods_ReaderKit_fr.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -149,7 +141,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				861A5C2D1E75151A00560E3A /* Pods_ReaderKit.framework in Frameworks */,
 				5055559A69EA82D76D0F107A /* Pods_ReaderKit_de.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -158,7 +149,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				861A5C481E75151C00560E3A /* Pods_ReaderKit.framework in Frameworks */,
 				47A3F8B58D3B6AC42F4D0933 /* Pods_ReaderKit_es.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -167,7 +157,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CFB88E1830F4AFB555B39094 /* Pods_ReaderKit.framework in Frameworks */,
 				F512D6ECF4769991ED4ADB62 /* Pods_ReaderKit_en.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -229,8 +218,6 @@
 		B0E1C864B5C6B9C8A38D3BF9 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				8977A71E13225EDBC662AED5 /* Pods-ReaderKit.debug.xcconfig */,
-				B7115EC08ABED68B8DF0372E /* Pods-ReaderKit.release.xcconfig */,
 				05156E536D2ECBA4574E148F /* Pods-ReaderKit_de.debug.xcconfig */,
 				853E147AB47F76459448D369 /* Pods-ReaderKit_de.release.xcconfig */,
 				6AA3F79A8BA241EACCD90408 /* Pods-ReaderKit_en.debug.xcconfig */,
@@ -315,7 +302,6 @@
 		D9DED9745A5805471D11C734 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0212F32A5B0F245E930EE10D /* Pods_ReaderKit.framework */,
 				832E73FB54799E1B9ED40F3C /* Pods_ReaderKit_de.framework */,
 				FBE62B52BA702B966FA6FA10 /* Pods_ReaderKit_en.framework */,
 				E38261D554BEDE555FE61E05 /* Pods_ReaderKit_es.framework */,
@@ -766,6 +752,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "$(SRCROOT)/ReaderKit/Langs/fr/ReaderKitInfo_fr.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "cube.ReaderKit-fr";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -778,6 +765,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "$(SRCROOT)/ReaderKit/Langs/fr/ReaderKitInfo_fr.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "cube.ReaderKit-fr";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -790,6 +778,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "$(SRCROOT)/ReaderKit/Langs/de/ReaderKitInfo_de.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "cube.ReaderKit-de";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -802,6 +791,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "$(SRCROOT)/ReaderKit/Langs/de/ReaderKitInfo_de.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "cube.ReaderKit-de";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -814,6 +804,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "$(SRCROOT)/ReaderKit/Langs/es/ReaderKitInfo_es.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "cube.ReaderKit-es";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -826,6 +817,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "$(SRCROOT)/ReaderKit/Langs/es/ReaderKitInfo_es.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "cube.ReaderKit-es";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -928,6 +920,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "$(SRCROOT)/ReaderKit/Langs/en/ReaderKitInfo_en.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "cube.ReaderKit-en";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -940,6 +933,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "$(SRCROOT)/ReaderKit/Langs/en/ReaderKitInfo_en.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "cube.ReaderKit-en";
 				PRODUCT_NAME = "$(TARGET_NAME)";
