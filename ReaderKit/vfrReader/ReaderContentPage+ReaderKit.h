@@ -7,11 +7,11 @@
 //
 
 #import <vfrReader/ReaderContentPage.h>
-#import "EUPDFFocusLayer.h"
+#import "REKPDFFocusLayer.h"
 #import <TesseractOCR/TesseractOCR.h>
 
-@interface ReaderContentPage (ReaderKitHook)<G8TesseractDelegate>
-@property (nonatomic, weak) EUPDFFocusLayer *focusLayer;
+@interface ReaderContentPage (ReaderKit) <G8TesseractDelegate>
+@property (nonatomic, weak) REKPDFFocusLayer *focusLayer;
 @property (nonatomic) CGPDFPageRef pdfPage;
 
 - (void)updateFocusLayer:(CGPoint)tapLocation;

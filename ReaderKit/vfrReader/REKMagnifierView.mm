@@ -1,14 +1,14 @@
 //
-//  EUMagnifierView.m
+//  REKMagnifierView.m
 //  ciku_ios
 //
 //  Created by Yiqing XIAO on 9/5/11.
 //  Copyright 2011 SNDA. All rights reserved.
 //
 
-#import "EUMagnifierView.h"
+#import "REKMagnifierView.h"
 
-@implementation EUMagnifierView
+@implementation REKMagnifierView
 @synthesize viewToMagnify, touchPoint;
 - (id)initWithFrame:(CGRect)frame {
 	if (self = [super initWithFrame:CGRectMake(0, 0, MAGNIFIER_RECT_WIDTH, MAGNIFIER_RECT_HEIGHT)]) {

@@ -1,5 +1,5 @@
 //
-//  EUMagnifierView.h
+//  REKMagnifierView.h
 //  ciku_ios
 //
 //  Created by Yiqing XIAO on 9/5/11.
@@ -13,7 +13,7 @@
 #define MAGNIFIER_VISIBLE_WIDTH 180
 #define MAGNIFIER_VISIBLE_HEIGHT 40
 
-@interface EUMagnifierView : UIView
+@interface REKMagnifierView : UIView
 {
     UIView *viewToMagnify;
 	CGPoint touchPoint;

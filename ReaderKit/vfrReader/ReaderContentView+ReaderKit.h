@@ -8,12 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import <vfrReader/ReaderContentView.h>
-#import "EUMagnifierView.h"
+#import "REKMagnifierView.h"
 
 
-@interface ReaderContentView (ReaderKitHook)
+@interface ReaderContentView (ReaderKit)
 
-@property (nonatomic, strong) EUMagnifierView *magnifierView;
+@property (nonatomic, strong) REKMagnifierView *magnifierView;
 @property (nonatomic) int magniferLongPressCount;
 @property (nonatomic, strong) ReaderContentPage *contentPage;
 

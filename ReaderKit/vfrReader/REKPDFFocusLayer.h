@@ -1,5 +1,5 @@
 //
-//  EUPDFFocusLayer.h
+//  REKPDFFocusLayer.h
 //  ciku_ios
 //
 //  Created by XIAOYQ on 10/7/11.
@@ -10,7 +10,7 @@
 #import <QuartzCore/QuartzCore.h>
 #import <QuartzCore/CATiledLayer.h>
 
-@interface EUPDFFocusLayer : CALayer
+@interface REKPDFFocusLayer : CALayer
 {
     BOOL isFound;
 }

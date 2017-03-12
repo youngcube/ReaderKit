@@ -8,6 +8,21 @@
 
 #import "ReaderKitManager.h"
 
+@implementation ReaderKitWordCaptureModel
+
+- (instancetype)initWithWord:(NSString *)word rect:(CGRect)rect viewController:(UIViewController *)viewController
+{
+    if (self = [super init]){
+        self.word = word;
+        self.rect = rect;
+        self.viewController = viewController;
+    }
+    return self;
+}
+
+@end
+
+
 @implementation ReaderKitManager
 + (ReaderKitManager *)sharedInstance
 {
@@ -33,13 +48,26 @@
 #ifdef _EUDIC_
         tessOcr->Init([[resourcePath stringByAppendingString:@"tessdata/"] UTF8String], "eng", OEM_TESSERACT_CUBE_COMBINED);
 #else
-        tessOcr->Init([[resourcePath stringByAppendingString:@"tessdata/"] UTF8String], "eng");
+        tessOcr->Init([[resourcePath stringByAppendingString:@"tessdata/"] UTF8String], READERKIT_OCR_LANG);
 #endif
         
     }
     return tessOcr;
 }
 
+#pragma mark - Word Capture Method
++ (void)shouldShowWordCaptured:(NSString *)word viewController:(UIViewController *)vc rect:(CGRect)rect
+{
+    ReaderKitWordCaptureModel *model = [[ReaderKitWordCaptureModel alloc] initWithWord:word rect:rect viewController:vc];
+    [[NSNotificationCenter defaultCenter] postNotificationName:kNotificationReaderKitShouldShowWordCaptured object:model];
+}
+
++ (void)shouldClearCapturedWord
+{
+    [[NSNotificationCenter defaultCenter] postNotificationName:kNotificationReaderKitShouldClearCapturedWord object:nil];
+}
+
+#pragma mark - StrOpt Method
 + (CHAR_TYPE)getCharType:(unichar)ch
 {
     //windows 下面tolower会错误处理中文
@@ -109,5 +137,13 @@
         }
         
     }
+}
+
++ (BOOL)isCapital:(unichar)ch
+{
+    if (ch == __tolower(ch)){
+        return YES;
+    }
+    return NO;
 }
 @end

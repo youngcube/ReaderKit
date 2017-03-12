@@ -6,11 +6,11 @@
 //  Copyright © 2017年 cube. All rights reserved.
 //
 
-#import "ReaderContentView+ReaderKitHook.h"
+#import "ReaderContentView+ReaderKit.h"
 #import "ReaderKitHook.h"
-#import "ReaderContentPage+ReaderKitHook.h"
+#import "ReaderContentPage+ReaderKit.h"
 
-@implementation ReaderContentView (ReaderKitHook)
+@implementation ReaderContentView (ReaderKit)
 
 @dynamic magnifierView;
 @dynamic magniferLongPressCount;
@@ -22,12 +22,12 @@ static char magniferLongPressCountKey;
 
 
 #pragma mark - Property
-- (EUMagnifierView *)magnifierView
+- (REKMagnifierView *)magnifierView
 {
     return objc_getAssociatedObject(self, &magnifierViewKey);
 }
 
-- (void)setMagnifierView:(EUMagnifierView *)magnifierView
+- (void)setMagnifierView:(REKMagnifierView *)magnifierView
 {
     objc_setAssociatedObject(self, &magnifierViewKey, magnifierView, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
@@ -76,7 +76,7 @@ static char magniferLongPressCountKey;
     
     if (self.magnifierView == nil)
     {
-        self.magnifierView = [[EUMagnifierView alloc] init];
+        self.magnifierView = [[REKMagnifierView alloc] init];
         self.magnifierView.viewToMagnify = self.superview;
     }
     

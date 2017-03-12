@@ -6,22 +6,23 @@
 //  Copyright © 2017年 cube. All rights reserved.
 //
 
-#import "ReaderContentPage+ReaderKitHook.h"
+#import "ReaderContentPage+ReaderKit.h"
 #import "ReaderKitHook.h"
 #import "ReaderKitManager.h"
+#import "ReaderKitConstants.h"
 
-@implementation ReaderContentPage (ReaderKitHook)
+@implementation ReaderContentPage (ReaderKit)
 
 #pragma mark - Property
 @dynamic focusLayer;
 @dynamic pdfPage;
 static char focusLayerKey;
-- (EUPDFFocusLayer *)focusLayer
+- (REKPDFFocusLayer *)focusLayer
 {
     return objc_getAssociatedObject(self, &focusLayerKey);
 }
 
-- (void)setFocusLayer:(EUPDFFocusLayer *)focusLayer
+- (void)setFocusLayer:(REKPDFFocusLayer *)focusLayer
 {
     objc_setAssociatedObject(self, &focusLayerKey, focusLayer, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
@@ -51,7 +52,7 @@ static char focusLayerKey;
 {
     ReaderContentPage *contentPage = [self hook_initWithFrame:frame];
     
-    self.focusLayer = [EUPDFFocusLayer layer];
+    self.focusLayer = [REKPDFFocusLayer layer];
     [self.focusLayer setHidden:YES];
     [self.layer addSublayer:self.focusLayer];
     
@@ -142,7 +143,7 @@ static char focusLayerKey;
     delete it;
     
     
-    G8Tesseract *tesseract = [[G8Tesseract alloc] initWithLanguage:@"eng"];
+    G8Tesseract *tesseract = [[G8Tesseract alloc] initWithLanguage:@READERKIT_OCR_LANG];
     tesseract.delegate = self;
     tesseract.image = [[image g8_blackAndWhite] g8_grayScale];
     tesseract.rect = CGRectMake(0, 0, imageSize.width, imageSize.height);
@@ -184,8 +185,8 @@ static char focusLayerKey;
                 NSLog(@"reco = %@",capText);
                 //}
                 if (/**confidenceLevel >= 30 &&*/
-//                    [[ReaderViewController sharedEUCaptureDelegate] euPDFShouldShowWordTapped:capText withRect:[self convertRect:finalRect toView:nil]])
-                    1==1)
+                    [[ReaderKitManager sharedInstance].captureDelegate captureDelegateShouldShowWordCaptured:capText rect:[self convertRect:finalRect toView:nil]])
+                    
                 {
                     [self.focusLayer setIsFound:YES];
                     [CATransaction begin];

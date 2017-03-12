@@ -12,7 +12,6 @@
 
 @implementation ReaderKitHook
 
-
 + (void)swizzlingInClass:(Class)cls originalSelector:(SEL)originalSelector swizzledSelector:(SEL)swizzledSelector
 {
     Class class = cls;

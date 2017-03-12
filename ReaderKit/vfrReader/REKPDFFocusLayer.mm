@@ -1,14 +1,14 @@
 //
-//  EUPDFFocusLayer.m
+//  REKPDFFocusLayer.m
 //  ciku_ios
 //
 //  Created by XIAOYQ on 10/7/11.
 //  Copyright (c) 2011 SNDA. All rights reserved.
 //
 
-#import "EUPDFFocusLayer.h"
+#import "REKPDFFocusLayer.h"
 
-@implementation EUPDFFocusLayer
+@implementation REKPDFFocusLayer
 @synthesize isFound;
 -(id)init
 {
