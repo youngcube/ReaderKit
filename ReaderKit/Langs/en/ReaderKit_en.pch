@@ -1,0 +1,16 @@
+//
+//  ReaderKit_en.pch
+//  ReaderKit
+//
+//  Created by cube on 2017/3/12.
+//  Copyright © 2017年 cube. All rights reserved.
+//
+
+#ifndef ReaderKit_en_pch
+#define ReaderKit_en_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#define _EUDIC_
+
+#endif /* ReaderKit_en_pch */

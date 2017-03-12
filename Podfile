@@ -9,7 +9,19 @@ def myCommonPods
     pod 'TesseractOCRiOS'
 end
 
-target 'ReaderKit' do
+target 'ReaderKit_en' do
+    myCommonPods
+end
+
+target 'ReaderKit_fr' do
+    myCommonPods
+end
+
+target 'ReaderKit_de' do
+    myCommonPods
+end
+
+target 'ReaderKit_es' do
     myCommonPods
 end
 

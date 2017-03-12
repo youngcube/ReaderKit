@@ -7,12 +7,64 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		36D6D2411C98B9EA6C126950 /* Pods_ReaderKit_fr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F7D713FE2FAAE4446043D4E /* Pods_ReaderKit_fr.framework */; };
+		47A3F8B58D3B6AC42F4D0933 /* Pods_ReaderKit_es.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E38261D554BEDE555FE61E05 /* Pods_ReaderKit_es.framework */; };
+		5055559A69EA82D76D0F107A /* Pods_ReaderKit_de.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 832E73FB54799E1B9ED40F3C /* Pods_ReaderKit_de.framework */; };
 		861A5BAD1E72F14000560E3A /* REKPDFFocusLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 861A5BAC1E72F14000560E3A /* REKPDFFocusLayer.mm */; };
 		861A5BB01E72F21D00560E3A /* ReaderContentPage+ReaderKit.mm in Sources */ = {isa = PBXBuildFile; fileRef = 861A5BAF1E72F21D00560E3A /* ReaderContentPage+ReaderKit.mm */; };
-		861A5BB71E73C6F100560E3A /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = 861A5BB61E73C6F100560E3A /* tessdata */; };
 		861A5BBA1E7463F500560E3A /* ReaderKitManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 861A5BB91E7463F500560E3A /* ReaderKitManager.mm */; };
 		861A5BC11E74EF6300560E3A /* ReaderViewController+ReaderKit.mm in Sources */ = {isa = PBXBuildFile; fileRef = 861A5BC01E74EF6300560E3A /* ReaderViewController+ReaderKit.mm */; };
 		861A5C011E750D9F00560E3A /* ReaderDocument+ReaderKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 861A5C001E750D9F00560E3A /* ReaderDocument+ReaderKit.m */; };
+		861A5C061E7514FF00560E3A /* ReaderKitManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 861A5BB91E7463F500560E3A /* ReaderKitManager.mm */; };
+		861A5C071E7514FF00560E3A /* REKPDFFocusLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 861A5BAC1E72F14000560E3A /* REKPDFFocusLayer.mm */; };
+		861A5C081E7514FF00560E3A /* ReaderKitFileSelectController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3FD0731E7291CD008963FF /* ReaderKitFileSelectController.m */; };
+		861A5C091E7514FF00560E3A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3FD0701E7291CD008963FF /* AppDelegate.m */; };
+		861A5C0A1E7514FF00560E3A /* ReaderKitHook.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3FD08E1E72A79D008963FF /* ReaderKitHook.m */; };
+		861A5C0B1E7514FF00560E3A /* ReaderContentView+ReaderKit.mm in Sources */ = {isa = PBXBuildFile; fileRef = BF3FD08B1E72A776008963FF /* ReaderContentView+ReaderKit.mm */; };
+		861A5C0C1E7514FF00560E3A /* ReaderContentPage+ReaderKit.mm in Sources */ = {isa = PBXBuildFile; fileRef = 861A5BAF1E72F21D00560E3A /* ReaderContentPage+ReaderKit.mm */; };
+		861A5C0D1E7514FF00560E3A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3FD06D1E7291CD008963FF /* main.m */; };
+		861A5C0E1E7514FF00560E3A /* ReaderViewController+ReaderKit.mm in Sources */ = {isa = PBXBuildFile; fileRef = 861A5BC01E74EF6300560E3A /* ReaderViewController+ReaderKit.mm */; };
+		861A5C0F1E7514FF00560E3A /* ReaderDocument+ReaderKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 861A5C001E750D9F00560E3A /* ReaderDocument+ReaderKit.m */; };
+		861A5C101E7514FF00560E3A /* REKMagnifierView.mm in Sources */ = {isa = PBXBuildFile; fileRef = BF3FD0911E72AE47008963FF /* REKMagnifierView.mm */; };
+		861A5C121E7514FF00560E3A /* Pods_ReaderKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0212F32A5B0F245E930EE10D /* Pods_ReaderKit.framework */; };
+		861A5C141E7514FF00560E3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF3FD07A1E7291CD008963FF /* LaunchScreen.storyboard */; };
+		861A5C151E7514FF00560E3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF3FD0781E7291CD008963FF /* Assets.xcassets */; };
+		861A5C211E75151A00560E3A /* ReaderKitManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 861A5BB91E7463F500560E3A /* ReaderKitManager.mm */; };
+		861A5C221E75151A00560E3A /* REKPDFFocusLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 861A5BAC1E72F14000560E3A /* REKPDFFocusLayer.mm */; };
+		861A5C231E75151A00560E3A /* ReaderKitFileSelectController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3FD0731E7291CD008963FF /* ReaderKitFileSelectController.m */; };
+		861A5C241E75151A00560E3A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3FD0701E7291CD008963FF /* AppDelegate.m */; };
+		861A5C251E75151A00560E3A /* ReaderKitHook.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3FD08E1E72A79D008963FF /* ReaderKitHook.m */; };
+		861A5C261E75151A00560E3A /* ReaderContentView+ReaderKit.mm in Sources */ = {isa = PBXBuildFile; fileRef = BF3FD08B1E72A776008963FF /* ReaderContentView+ReaderKit.mm */; };
+		861A5C271E75151A00560E3A /* ReaderContentPage+ReaderKit.mm in Sources */ = {isa = PBXBuildFile; fileRef = 861A5BAF1E72F21D00560E3A /* ReaderContentPage+ReaderKit.mm */; };
+		861A5C281E75151A00560E3A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3FD06D1E7291CD008963FF /* main.m */; };
+		861A5C291E75151A00560E3A /* ReaderViewController+ReaderKit.mm in Sources */ = {isa = PBXBuildFile; fileRef = 861A5BC01E74EF6300560E3A /* ReaderViewController+ReaderKit.mm */; };
+		861A5C2A1E75151A00560E3A /* ReaderDocument+ReaderKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 861A5C001E750D9F00560E3A /* ReaderDocument+ReaderKit.m */; };
+		861A5C2B1E75151A00560E3A /* REKMagnifierView.mm in Sources */ = {isa = PBXBuildFile; fileRef = BF3FD0911E72AE47008963FF /* REKMagnifierView.mm */; };
+		861A5C2D1E75151A00560E3A /* Pods_ReaderKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0212F32A5B0F245E930EE10D /* Pods_ReaderKit.framework */; };
+		861A5C2F1E75151A00560E3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF3FD07A1E7291CD008963FF /* LaunchScreen.storyboard */; };
+		861A5C301E75151A00560E3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF3FD0781E7291CD008963FF /* Assets.xcassets */; };
+		861A5C3C1E75151C00560E3A /* ReaderKitManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 861A5BB91E7463F500560E3A /* ReaderKitManager.mm */; };
+		861A5C3D1E75151C00560E3A /* REKPDFFocusLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 861A5BAC1E72F14000560E3A /* REKPDFFocusLayer.mm */; };
+		861A5C3E1E75151C00560E3A /* ReaderKitFileSelectController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3FD0731E7291CD008963FF /* ReaderKitFileSelectController.m */; };
+		861A5C3F1E75151C00560E3A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3FD0701E7291CD008963FF /* AppDelegate.m */; };
+		861A5C401E75151C00560E3A /* ReaderKitHook.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3FD08E1E72A79D008963FF /* ReaderKitHook.m */; };
+		861A5C411E75151C00560E3A /* ReaderContentView+ReaderKit.mm in Sources */ = {isa = PBXBuildFile; fileRef = BF3FD08B1E72A776008963FF /* ReaderContentView+ReaderKit.mm */; };
+		861A5C421E75151C00560E3A /* ReaderContentPage+ReaderKit.mm in Sources */ = {isa = PBXBuildFile; fileRef = 861A5BAF1E72F21D00560E3A /* ReaderContentPage+ReaderKit.mm */; };
+		861A5C431E75151C00560E3A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3FD06D1E7291CD008963FF /* main.m */; };
+		861A5C441E75151C00560E3A /* ReaderViewController+ReaderKit.mm in Sources */ = {isa = PBXBuildFile; fileRef = 861A5BC01E74EF6300560E3A /* ReaderViewController+ReaderKit.mm */; };
+		861A5C451E75151C00560E3A /* ReaderDocument+ReaderKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 861A5C001E750D9F00560E3A /* ReaderDocument+ReaderKit.m */; };
+		861A5C461E75151C00560E3A /* REKMagnifierView.mm in Sources */ = {isa = PBXBuildFile; fileRef = BF3FD0911E72AE47008963FF /* REKMagnifierView.mm */; };
+		861A5C481E75151C00560E3A /* Pods_ReaderKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0212F32A5B0F245E930EE10D /* Pods_ReaderKit.framework */; };
+		861A5C4A1E75151C00560E3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF3FD07A1E7291CD008963FF /* LaunchScreen.storyboard */; };
+		861A5C4B1E75151C00560E3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF3FD0781E7291CD008963FF /* Assets.xcassets */; };
+		861A5C551E751A4A00560E3A /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = 861A5C541E751A4A00560E3A /* tessdata */; };
+		861A5C571E751A5400560E3A /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = 861A5C561E751A5400560E3A /* tessdata */; };
+		861A5C5D1E751A7700560E3A /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = 861A5C5C1E751A7700560E3A /* tessdata */; };
+		861A5C5F1E751A8000560E3A /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = 861A5C5E1E751A8000560E3A /* tessdata */; };
+		861A5C611E751A8B00560E3A /* ReaderKitInfo_de.plist in Resources */ = {isa = PBXBuildFile; fileRef = 861A5C601E751A8B00560E3A /* ReaderKitInfo_de.plist */; };
+		861A5C631E751A9500560E3A /* ReaderKitInfo_en.plist in Resources */ = {isa = PBXBuildFile; fileRef = 861A5C621E751A9500560E3A /* ReaderKitInfo_en.plist */; };
+		861A5C651E751A9C00560E3A /* ReaderKitInfo_es.plist in Resources */ = {isa = PBXBuildFile; fileRef = 861A5C641E751A9C00560E3A /* ReaderKitInfo_es.plist */; };
+		861A5C671E751AA300560E3A /* ReaderKitInfo_fr.plist in Resources */ = {isa = PBXBuildFile; fileRef = 861A5C661E751AA300560E3A /* ReaderKitInfo_fr.plist */; };
 		BF3FD06E1E7291CD008963FF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3FD06D1E7291CD008963FF /* main.m */; };
 		BF3FD0711E7291CD008963FF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3FD0701E7291CD008963FF /* AppDelegate.m */; };
 		BF3FD0741E7291CD008963FF /* ReaderKitFileSelectController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3FD0731E7291CD008963FF /* ReaderKitFileSelectController.m */; };
@@ -22,15 +74,22 @@
 		BF3FD08F1E72A79D008963FF /* ReaderKitHook.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3FD08E1E72A79D008963FF /* ReaderKitHook.m */; };
 		BF3FD0921E72AE47008963FF /* REKMagnifierView.mm in Sources */ = {isa = PBXBuildFile; fileRef = BF3FD0911E72AE47008963FF /* REKMagnifierView.mm */; };
 		CFB88E1830F4AFB555B39094 /* Pods_ReaderKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0212F32A5B0F245E930EE10D /* Pods_ReaderKit.framework */; };
+		F512D6ECF4769991ED4ADB62 /* Pods_ReaderKit_en.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBE62B52BA702B966FA6FA10 /* Pods_ReaderKit_en.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0212F32A5B0F245E930EE10D /* Pods_ReaderKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReaderKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		05156E536D2ECBA4574E148F /* Pods-ReaderKit_de.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReaderKit_de.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReaderKit_de/Pods-ReaderKit_de.debug.xcconfig"; sourceTree = "<group>"; };
+		411CAC88F495C788E7A2E70D /* Pods-ReaderKit_en.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReaderKit_en.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReaderKit_en/Pods-ReaderKit_en.release.xcconfig"; sourceTree = "<group>"; };
+		6AA3F79A8BA241EACCD90408 /* Pods-ReaderKit_en.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReaderKit_en.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReaderKit_en/Pods-ReaderKit_en.debug.xcconfig"; sourceTree = "<group>"; };
+		7BC83D86F33C27B32D33AA16 /* Pods-ReaderKit_es.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReaderKit_es.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReaderKit_es/Pods-ReaderKit_es.release.xcconfig"; sourceTree = "<group>"; };
+		832E73FB54799E1B9ED40F3C /* Pods_ReaderKit_de.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReaderKit_de.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84ACDCD2A2165393B566DB2A /* Pods-ReaderKit_fr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReaderKit_fr.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReaderKit_fr/Pods-ReaderKit_fr.debug.xcconfig"; sourceTree = "<group>"; };
+		853E147AB47F76459448D369 /* Pods-ReaderKit_de.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReaderKit_de.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReaderKit_de/Pods-ReaderKit_de.release.xcconfig"; sourceTree = "<group>"; };
 		861A5BAB1E72F14000560E3A /* REKPDFFocusLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REKPDFFocusLayer.h; sourceTree = "<group>"; };
 		861A5BAC1E72F14000560E3A /* REKPDFFocusLayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = REKPDFFocusLayer.mm; sourceTree = "<group>"; };
 		861A5BAE1E72F21D00560E3A /* ReaderContentPage+ReaderKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ReaderContentPage+ReaderKit.h"; sourceTree = "<group>"; };
 		861A5BAF1E72F21D00560E3A /* ReaderContentPage+ReaderKit.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "ReaderContentPage+ReaderKit.mm"; sourceTree = "<group>"; };
-		861A5BB61E73C6F100560E3A /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
 		861A5BB81E7463F500560E3A /* ReaderKitManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReaderKitManager.h; sourceTree = "<group>"; };
 		861A5BB91E7463F500560E3A /* ReaderKitManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ReaderKitManager.mm; sourceTree = "<group>"; };
 		861A5BBF1E74EF6300560E3A /* ReaderViewController+ReaderKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ReaderViewController+ReaderKit.h"; sourceTree = "<group>"; };
@@ -38,9 +97,27 @@
 		861A5BFF1E750D9F00560E3A /* ReaderDocument+ReaderKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ReaderDocument+ReaderKit.h"; sourceTree = "<group>"; };
 		861A5C001E750D9F00560E3A /* ReaderDocument+ReaderKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ReaderDocument+ReaderKit.m"; sourceTree = "<group>"; };
 		861A5C021E75108A00560E3A /* ReaderKitConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReaderKitConstants.h; sourceTree = "<group>"; };
+		861A5C1C1E7514FF00560E3A /* ReaderKit_fr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReaderKit_fr.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		861A5C371E75151A00560E3A /* ReaderKit_de.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReaderKit_de.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		861A5C521E75151C00560E3A /* ReaderKit_es.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReaderKit_es.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		861A5C541E751A4A00560E3A /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
+		861A5C561E751A5400560E3A /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
+		861A5C5C1E751A7700560E3A /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
+		861A5C5E1E751A8000560E3A /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
+		861A5C601E751A8B00560E3A /* ReaderKitInfo_de.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ReaderKitInfo_de.plist; sourceTree = "<group>"; };
+		861A5C621E751A9500560E3A /* ReaderKitInfo_en.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ReaderKitInfo_en.plist; sourceTree = "<group>"; };
+		861A5C641E751A9C00560E3A /* ReaderKitInfo_es.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ReaderKitInfo_es.plist; sourceTree = "<group>"; };
+		861A5C661E751AA300560E3A /* ReaderKitInfo_fr.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ReaderKitInfo_fr.plist; sourceTree = "<group>"; };
+		861A5C681E751B2100560E3A /* ReaderKit_de.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReaderKit_de.pch; sourceTree = "<group>"; };
+		861A5C691E751B3000560E3A /* ReaderKit_en.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReaderKit_en.pch; sourceTree = "<group>"; };
+		861A5C6A1E751B3800560E3A /* ReaderKit_es.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReaderKit_es.pch; sourceTree = "<group>"; };
+		861A5C6B1E751B3F00560E3A /* ReaderKit_fr.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReaderKit_fr.pch; sourceTree = "<group>"; };
 		8977A71E13225EDBC662AED5 /* Pods-ReaderKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReaderKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReaderKit/Pods-ReaderKit.debug.xcconfig"; sourceTree = "<group>"; };
+		9F7D713FE2FAAE4446043D4E /* Pods_ReaderKit_fr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReaderKit_fr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3695AC61F12D2A2DF57FC6E /* Pods-ReaderKit_fr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReaderKit_fr.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReaderKit_fr/Pods-ReaderKit_fr.release.xcconfig"; sourceTree = "<group>"; };
 		B7115EC08ABED68B8DF0372E /* Pods-ReaderKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReaderKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReaderKit/Pods-ReaderKit.release.xcconfig"; sourceTree = "<group>"; };
-		BF3FD0691E7291CD008963FF /* ReaderKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReaderKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE5156E27EF86A01B0652C44 /* Pods-ReaderKit_es.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReaderKit_es.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReaderKit_es/Pods-ReaderKit_es.debug.xcconfig"; sourceTree = "<group>"; };
+		BF3FD0691E7291CD008963FF /* ReaderKit_en.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReaderKit_en.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF3FD06D1E7291CD008963FF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BF3FD06F1E7291CD008963FF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BF3FD0701E7291CD008963FF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -48,21 +125,50 @@
 		BF3FD0731E7291CD008963FF /* ReaderKitFileSelectController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReaderKitFileSelectController.m; sourceTree = "<group>"; };
 		BF3FD0781E7291CD008963FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF3FD07B1E7291CD008963FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		BF3FD07D1E7291CD008963FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF3FD08A1E72A776008963FF /* ReaderContentView+ReaderKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ReaderContentView+ReaderKit.h"; sourceTree = "<group>"; };
 		BF3FD08B1E72A776008963FF /* ReaderContentView+ReaderKit.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "ReaderContentView+ReaderKit.mm"; sourceTree = "<group>"; };
 		BF3FD08D1E72A79D008963FF /* ReaderKitHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReaderKitHook.h; sourceTree = "<group>"; };
 		BF3FD08E1E72A79D008963FF /* ReaderKitHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReaderKitHook.m; sourceTree = "<group>"; };
 		BF3FD0901E72AE47008963FF /* REKMagnifierView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REKMagnifierView.h; sourceTree = "<group>"; };
 		BF3FD0911E72AE47008963FF /* REKMagnifierView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = REKMagnifierView.mm; sourceTree = "<group>"; };
+		E38261D554BEDE555FE61E05 /* Pods_ReaderKit_es.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReaderKit_es.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBE62B52BA702B966FA6FA10 /* Pods_ReaderKit_en.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReaderKit_en.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		861A5C111E7514FF00560E3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				861A5C121E7514FF00560E3A /* Pods_ReaderKit.framework in Frameworks */,
+				36D6D2411C98B9EA6C126950 /* Pods_ReaderKit_fr.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		861A5C2C1E75151A00560E3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				861A5C2D1E75151A00560E3A /* Pods_ReaderKit.framework in Frameworks */,
+				5055559A69EA82D76D0F107A /* Pods_ReaderKit_de.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		861A5C471E75151C00560E3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				861A5C481E75151C00560E3A /* Pods_ReaderKit.framework in Frameworks */,
+				47A3F8B58D3B6AC42F4D0933 /* Pods_ReaderKit_es.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BF3FD0661E7291CD008963FF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				CFB88E1830F4AFB555B39094 /* Pods_ReaderKit.framework in Frameworks */,
+				F512D6ECF4769991ED4ADB62 /* Pods_ReaderKit_en.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +189,9 @@
 		861A5BB21E72F34B00560E3A /* de */ = {
 			isa = PBXGroup;
 			children = (
+				861A5C601E751A8B00560E3A /* ReaderKitInfo_de.plist */,
+				861A5C541E751A4A00560E3A /* tessdata */,
+				861A5C681E751B2100560E3A /* ReaderKit_de.pch */,
 			);
 			path = de;
 			sourceTree = "<group>";
@@ -90,6 +199,9 @@
 		861A5BB31E72F34B00560E3A /* en */ = {
 			isa = PBXGroup;
 			children = (
+				861A5C621E751A9500560E3A /* ReaderKitInfo_en.plist */,
+				861A5C561E751A5400560E3A /* tessdata */,
+				861A5C691E751B3000560E3A /* ReaderKit_en.pch */,
 			);
 			path = en;
 			sourceTree = "<group>";
@@ -97,6 +209,9 @@
 		861A5BB41E72F34B00560E3A /* es */ = {
 			isa = PBXGroup;
 			children = (
+				861A5C641E751A9C00560E3A /* ReaderKitInfo_es.plist */,
+				861A5C5E1E751A8000560E3A /* tessdata */,
+				861A5C6A1E751B3800560E3A /* ReaderKit_es.pch */,
 			);
 			path = es;
 			sourceTree = "<group>";
@@ -104,6 +219,9 @@
 		861A5BB51E72F34B00560E3A /* fr */ = {
 			isa = PBXGroup;
 			children = (
+				861A5C661E751AA300560E3A /* ReaderKitInfo_fr.plist */,
+				861A5C5C1E751A7700560E3A /* tessdata */,
+				861A5C6B1E751B3F00560E3A /* ReaderKit_fr.pch */,
 			);
 			path = fr;
 			sourceTree = "<group>";
@@ -113,6 +231,14 @@
 			children = (
 				8977A71E13225EDBC662AED5 /* Pods-ReaderKit.debug.xcconfig */,
 				B7115EC08ABED68B8DF0372E /* Pods-ReaderKit.release.xcconfig */,
+				05156E536D2ECBA4574E148F /* Pods-ReaderKit_de.debug.xcconfig */,
+				853E147AB47F76459448D369 /* Pods-ReaderKit_de.release.xcconfig */,
+				6AA3F79A8BA241EACCD90408 /* Pods-ReaderKit_en.debug.xcconfig */,
+				411CAC88F495C788E7A2E70D /* Pods-ReaderKit_en.release.xcconfig */,
+				BE5156E27EF86A01B0652C44 /* Pods-ReaderKit_es.debug.xcconfig */,
+				7BC83D86F33C27B32D33AA16 /* Pods-ReaderKit_es.release.xcconfig */,
+				84ACDCD2A2165393B566DB2A /* Pods-ReaderKit_fr.debug.xcconfig */,
+				B3695AC61F12D2A2DF57FC6E /* Pods-ReaderKit_fr.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -130,7 +256,10 @@
 		BF3FD06A1E7291CD008963FF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BF3FD0691E7291CD008963FF /* ReaderKit.app */,
+				BF3FD0691E7291CD008963FF /* ReaderKit_en.app */,
+				861A5C1C1E7514FF00560E3A /* ReaderKit_fr.app */,
+				861A5C371E75151A00560E3A /* ReaderKit_de.app */,
+				861A5C521E75151C00560E3A /* ReaderKit_es.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -138,7 +267,6 @@
 		BF3FD06B1E7291CD008963FF /* ReaderKit */ = {
 			isa = PBXGroup;
 			children = (
-				861A5BB61E73C6F100560E3A /* tessdata */,
 				861A5BB11E72F34B00560E3A /* Langs */,
 				BF3FD0831E7297EA008963FF /* vfrReader */,
 				BF3FD06F1E7291CD008963FF /* AppDelegate.h */,
@@ -152,7 +280,6 @@
 				861A5C021E75108A00560E3A /* ReaderKitConstants.h */,
 				BF3FD0781E7291CD008963FF /* Assets.xcassets */,
 				BF3FD07A1E7291CD008963FF /* LaunchScreen.storyboard */,
-				BF3FD07D1E7291CD008963FF /* Info.plist */,
 				BF3FD06C1E7291CD008963FF /* Supporting Files */,
 			);
 			path = ReaderKit;
@@ -189,6 +316,10 @@
 			isa = PBXGroup;
 			children = (
 				0212F32A5B0F245E930EE10D /* Pods_ReaderKit.framework */,
+				832E73FB54799E1B9ED40F3C /* Pods_ReaderKit_de.framework */,
+				FBE62B52BA702B966FA6FA10 /* Pods_ReaderKit_en.framework */,
+				E38261D554BEDE555FE61E05 /* Pods_ReaderKit_es.framework */,
+				9F7D713FE2FAAE4446043D4E /* Pods_ReaderKit_fr.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -196,9 +327,69 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		BF3FD0681E7291CD008963FF /* ReaderKit */ = {
+		861A5C031E7514FF00560E3A /* ReaderKit_fr */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BF3FD0801E7291CD008963FF /* Build configuration list for PBXNativeTarget "ReaderKit" */;
+			buildConfigurationList = 861A5C191E7514FF00560E3A /* Build configuration list for PBXNativeTarget "ReaderKit_fr" */;
+			buildPhases = (
+				861A5C041E7514FF00560E3A /* [CP] Check Pods Manifest.lock */,
+				861A5C051E7514FF00560E3A /* Sources */,
+				861A5C111E7514FF00560E3A /* Frameworks */,
+				861A5C131E7514FF00560E3A /* Resources */,
+				861A5C171E7514FF00560E3A /* [CP] Embed Pods Frameworks */,
+				861A5C181E7514FF00560E3A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReaderKit_fr;
+			productName = ReaderKit;
+			productReference = 861A5C1C1E7514FF00560E3A /* ReaderKit_fr.app */;
+			productType = "com.apple.product-type.application";
+		};
+		861A5C1E1E75151A00560E3A /* ReaderKit_de */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 861A5C341E75151A00560E3A /* Build configuration list for PBXNativeTarget "ReaderKit_de" */;
+			buildPhases = (
+				861A5C1F1E75151A00560E3A /* [CP] Check Pods Manifest.lock */,
+				861A5C201E75151A00560E3A /* Sources */,
+				861A5C2C1E75151A00560E3A /* Frameworks */,
+				861A5C2E1E75151A00560E3A /* Resources */,
+				861A5C321E75151A00560E3A /* [CP] Embed Pods Frameworks */,
+				861A5C331E75151A00560E3A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReaderKit_de;
+			productName = ReaderKit;
+			productReference = 861A5C371E75151A00560E3A /* ReaderKit_de.app */;
+			productType = "com.apple.product-type.application";
+		};
+		861A5C391E75151C00560E3A /* ReaderKit_es */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 861A5C4F1E75151C00560E3A /* Build configuration list for PBXNativeTarget "ReaderKit_es" */;
+			buildPhases = (
+				861A5C3A1E75151C00560E3A /* [CP] Check Pods Manifest.lock */,
+				861A5C3B1E75151C00560E3A /* Sources */,
+				861A5C471E75151C00560E3A /* Frameworks */,
+				861A5C491E75151C00560E3A /* Resources */,
+				861A5C4D1E75151C00560E3A /* [CP] Embed Pods Frameworks */,
+				861A5C4E1E75151C00560E3A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReaderKit_es;
+			productName = ReaderKit;
+			productReference = 861A5C521E75151C00560E3A /* ReaderKit_es.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BF3FD0681E7291CD008963FF /* ReaderKit_en */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF3FD0801E7291CD008963FF /* Build configuration list for PBXNativeTarget "ReaderKit_en" */;
 			buildPhases = (
 				00C60E62E3E344E844F40843 /* [CP] Check Pods Manifest.lock */,
 				BF3FD0651E7291CD008963FF /* Sources */,
@@ -211,9 +402,9 @@
 			);
 			dependencies = (
 			);
-			name = ReaderKit;
+			name = ReaderKit_en;
 			productName = ReaderKit;
-			productReference = BF3FD0691E7291CD008963FF /* ReaderKit.app */;
+			productReference = BF3FD0691E7291CD008963FF /* ReaderKit_en.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -244,19 +435,56 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BF3FD0681E7291CD008963FF /* ReaderKit */,
+				BF3FD0681E7291CD008963FF /* ReaderKit_en */,
+				861A5C031E7514FF00560E3A /* ReaderKit_fr */,
+				861A5C1E1E75151A00560E3A /* ReaderKit_de */,
+				861A5C391E75151C00560E3A /* ReaderKit_es */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		861A5C131E7514FF00560E3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				861A5C141E7514FF00560E3A /* LaunchScreen.storyboard in Resources */,
+				861A5C151E7514FF00560E3A /* Assets.xcassets in Resources */,
+				861A5C671E751AA300560E3A /* ReaderKitInfo_fr.plist in Resources */,
+				861A5C5D1E751A7700560E3A /* tessdata in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		861A5C2E1E75151A00560E3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				861A5C2F1E75151A00560E3A /* LaunchScreen.storyboard in Resources */,
+				861A5C301E75151A00560E3A /* Assets.xcassets in Resources */,
+				861A5C551E751A4A00560E3A /* tessdata in Resources */,
+				861A5C611E751A8B00560E3A /* ReaderKitInfo_de.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		861A5C491E75151C00560E3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				861A5C4A1E75151C00560E3A /* LaunchScreen.storyboard in Resources */,
+				861A5C4B1E75151C00560E3A /* Assets.xcassets in Resources */,
+				861A5C651E751A9C00560E3A /* ReaderKitInfo_es.plist in Resources */,
+				861A5C5F1E751A8000560E3A /* tessdata in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BF3FD0671E7291CD008963FF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				BF3FD07C1E7291CD008963FF /* LaunchScreen.storyboard in Resources */,
+				861A5C631E751A9500560E3A /* ReaderKitInfo_en.plist in Resources */,
 				BF3FD0791E7291CD008963FF /* Assets.xcassets in Resources */,
-				861A5BB71E73C6F100560E3A /* tessdata in Resources */,
+				861A5C571E751A5400560E3A /* tessdata in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,7 +518,142 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReaderKit/Pods-ReaderKit-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReaderKit_en/Pods-ReaderKit_en-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		861A5C041E7514FF00560E3A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		861A5C171E7514FF00560E3A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReaderKit_fr/Pods-ReaderKit_fr-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		861A5C181E7514FF00560E3A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReaderKit_fr/Pods-ReaderKit_fr-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		861A5C1F1E75151A00560E3A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		861A5C321E75151A00560E3A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReaderKit_de/Pods-ReaderKit_de-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		861A5C331E75151A00560E3A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReaderKit_de/Pods-ReaderKit_de-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		861A5C3A1E75151C00560E3A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		861A5C4D1E75151C00560E3A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReaderKit_es/Pods-ReaderKit_es-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		861A5C4E1E75151C00560E3A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReaderKit_es/Pods-ReaderKit_es-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		940FE5454951FA41B94DEEB7 /* [CP] Embed Pods Frameworks */ = {
@@ -305,12 +668,66 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReaderKit/Pods-ReaderKit-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReaderKit_en/Pods-ReaderKit_en-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		861A5C051E7514FF00560E3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				861A5C061E7514FF00560E3A /* ReaderKitManager.mm in Sources */,
+				861A5C071E7514FF00560E3A /* REKPDFFocusLayer.mm in Sources */,
+				861A5C081E7514FF00560E3A /* ReaderKitFileSelectController.m in Sources */,
+				861A5C091E7514FF00560E3A /* AppDelegate.m in Sources */,
+				861A5C0A1E7514FF00560E3A /* ReaderKitHook.m in Sources */,
+				861A5C0B1E7514FF00560E3A /* ReaderContentView+ReaderKit.mm in Sources */,
+				861A5C0C1E7514FF00560E3A /* ReaderContentPage+ReaderKit.mm in Sources */,
+				861A5C0D1E7514FF00560E3A /* main.m in Sources */,
+				861A5C0E1E7514FF00560E3A /* ReaderViewController+ReaderKit.mm in Sources */,
+				861A5C0F1E7514FF00560E3A /* ReaderDocument+ReaderKit.m in Sources */,
+				861A5C101E7514FF00560E3A /* REKMagnifierView.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		861A5C201E75151A00560E3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				861A5C211E75151A00560E3A /* ReaderKitManager.mm in Sources */,
+				861A5C221E75151A00560E3A /* REKPDFFocusLayer.mm in Sources */,
+				861A5C231E75151A00560E3A /* ReaderKitFileSelectController.m in Sources */,
+				861A5C241E75151A00560E3A /* AppDelegate.m in Sources */,
+				861A5C251E75151A00560E3A /* ReaderKitHook.m in Sources */,
+				861A5C261E75151A00560E3A /* ReaderContentView+ReaderKit.mm in Sources */,
+				861A5C271E75151A00560E3A /* ReaderContentPage+ReaderKit.mm in Sources */,
+				861A5C281E75151A00560E3A /* main.m in Sources */,
+				861A5C291E75151A00560E3A /* ReaderViewController+ReaderKit.mm in Sources */,
+				861A5C2A1E75151A00560E3A /* ReaderDocument+ReaderKit.m in Sources */,
+				861A5C2B1E75151A00560E3A /* REKMagnifierView.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		861A5C3B1E75151C00560E3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				861A5C3C1E75151C00560E3A /* ReaderKitManager.mm in Sources */,
+				861A5C3D1E75151C00560E3A /* REKPDFFocusLayer.mm in Sources */,
+				861A5C3E1E75151C00560E3A /* ReaderKitFileSelectController.m in Sources */,
+				861A5C3F1E75151C00560E3A /* AppDelegate.m in Sources */,
+				861A5C401E75151C00560E3A /* ReaderKitHook.m in Sources */,
+				861A5C411E75151C00560E3A /* ReaderContentView+ReaderKit.mm in Sources */,
+				861A5C421E75151C00560E3A /* ReaderContentPage+ReaderKit.mm in Sources */,
+				861A5C431E75151C00560E3A /* main.m in Sources */,
+				861A5C441E75151C00560E3A /* ReaderViewController+ReaderKit.mm in Sources */,
+				861A5C451E75151C00560E3A /* ReaderDocument+ReaderKit.m in Sources */,
+				861A5C461E75151C00560E3A /* REKMagnifierView.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BF3FD0651E7291CD008963FF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -343,6 +760,78 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		861A5C1A1E7514FF00560E3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84ACDCD2A2165393B566DB2A /* Pods-ReaderKit_fr.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "$(SRCROOT)/ReaderKit/Langs/fr/ReaderKitInfo_fr.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cube.ReaderKit-fr";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		861A5C1B1E7514FF00560E3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3695AC61F12D2A2DF57FC6E /* Pods-ReaderKit_fr.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "$(SRCROOT)/ReaderKit/Langs/fr/ReaderKitInfo_fr.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cube.ReaderKit-fr";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		861A5C351E75151A00560E3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05156E536D2ECBA4574E148F /* Pods-ReaderKit_de.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "$(SRCROOT)/ReaderKit/Langs/de/ReaderKitInfo_de.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cube.ReaderKit-de";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		861A5C361E75151A00560E3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 853E147AB47F76459448D369 /* Pods-ReaderKit_de.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "$(SRCROOT)/ReaderKit/Langs/de/ReaderKitInfo_de.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cube.ReaderKit-de";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		861A5C501E75151C00560E3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE5156E27EF86A01B0652C44 /* Pods-ReaderKit_es.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "$(SRCROOT)/ReaderKit/Langs/es/ReaderKitInfo_es.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cube.ReaderKit-es";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		861A5C511E75151C00560E3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BC83D86F33C27B32D33AA16 /* Pods-ReaderKit_es.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "$(SRCROOT)/ReaderKit/Langs/es/ReaderKitInfo_es.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cube.ReaderKit-es";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		BF3FD07E1E7291CD008963FF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -435,24 +924,24 @@
 		};
 		BF3FD0811E7291CD008963FF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8977A71E13225EDBC662AED5 /* Pods-ReaderKit.debug.xcconfig */;
+			baseConfigurationReference = 6AA3F79A8BA241EACCD90408 /* Pods-ReaderKit_en.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = ReaderKit/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ReaderKit/Langs/en/ReaderKitInfo_en.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = cube.ReaderKit;
+				PRODUCT_BUNDLE_IDENTIFIER = "cube.ReaderKit-en";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
 		BF3FD0821E7291CD008963FF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B7115EC08ABED68B8DF0372E /* Pods-ReaderKit.release.xcconfig */;
+			baseConfigurationReference = 411CAC88F495C788E7A2E70D /* Pods-ReaderKit_en.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = ReaderKit/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ReaderKit/Langs/en/ReaderKitInfo_en.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = cube.ReaderKit;
+				PRODUCT_BUNDLE_IDENTIFIER = "cube.ReaderKit-en";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -460,6 +949,33 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		861A5C191E7514FF00560E3A /* Build configuration list for PBXNativeTarget "ReaderKit_fr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				861A5C1A1E7514FF00560E3A /* Debug */,
+				861A5C1B1E7514FF00560E3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		861A5C341E75151A00560E3A /* Build configuration list for PBXNativeTarget "ReaderKit_de" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				861A5C351E75151A00560E3A /* Debug */,
+				861A5C361E75151A00560E3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		861A5C4F1E75151C00560E3A /* Build configuration list for PBXNativeTarget "ReaderKit_es" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				861A5C501E75151C00560E3A /* Debug */,
+				861A5C511E75151C00560E3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		BF3FD0641E7291CD008963FF /* Build configuration list for PBXProject "ReaderKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -469,7 +985,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BF3FD0801E7291CD008963FF /* Build configuration list for PBXNativeTarget "ReaderKit" */ = {
+		BF3FD0801E7291CD008963FF /* Build configuration list for PBXNativeTarget "ReaderKit_en" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BF3FD0811E7291CD008963FF /* Debug */,
