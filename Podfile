@@ -6,6 +6,7 @@ use_frameworks!
 def myCommonPods
 	pod 'FolioReaderKit'
     pod 'vfrReader'
+    pod 'TesseractOCRiOS'
 end
 
 target 'ReaderKit' do

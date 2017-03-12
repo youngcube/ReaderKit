@@ -8,13 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		861A5BAD1E72F14000560E3A /* EUPDFFocusLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 861A5BAC1E72F14000560E3A /* EUPDFFocusLayer.mm */; };
-		861A5BB01E72F21D00560E3A /* ReaderContentPage+ReaderKitHook.m in Sources */ = {isa = PBXBuildFile; fileRef = 861A5BAF1E72F21D00560E3A /* ReaderContentPage+ReaderKitHook.m */; };
+		861A5BB01E72F21D00560E3A /* ReaderContentPage+ReaderKitHook.mm in Sources */ = {isa = PBXBuildFile; fileRef = 861A5BAF1E72F21D00560E3A /* ReaderContentPage+ReaderKitHook.mm */; };
+		861A5BB71E73C6F100560E3A /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = 861A5BB61E73C6F100560E3A /* tessdata */; };
+		861A5BBA1E7463F500560E3A /* ReaderKitManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 861A5BB91E7463F500560E3A /* ReaderKitManager.mm */; };
 		BF3FD06E1E7291CD008963FF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3FD06D1E7291CD008963FF /* main.m */; };
 		BF3FD0711E7291CD008963FF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3FD0701E7291CD008963FF /* AppDelegate.m */; };
 		BF3FD0741E7291CD008963FF /* ReaderKitFileSelectController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3FD0731E7291CD008963FF /* ReaderKitFileSelectController.m */; };
 		BF3FD0791E7291CD008963FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF3FD0781E7291CD008963FF /* Assets.xcassets */; };
 		BF3FD07C1E7291CD008963FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF3FD07A1E7291CD008963FF /* LaunchScreen.storyboard */; };
-		BF3FD08C1E72A776008963FF /* ReaderContentView+ReaderKitHook.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3FD08B1E72A776008963FF /* ReaderContentView+ReaderKitHook.m */; };
+		BF3FD08C1E72A776008963FF /* ReaderContentView+ReaderKitHook.mm in Sources */ = {isa = PBXBuildFile; fileRef = BF3FD08B1E72A776008963FF /* ReaderContentView+ReaderKitHook.mm */; };
 		BF3FD08F1E72A79D008963FF /* ReaderKitHook.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3FD08E1E72A79D008963FF /* ReaderKitHook.m */; };
 		BF3FD0921E72AE47008963FF /* EUMagnifierView.mm in Sources */ = {isa = PBXBuildFile; fileRef = BF3FD0911E72AE47008963FF /* EUMagnifierView.mm */; };
 		CFB88E1830F4AFB555B39094 /* Pods_ReaderKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0212F32A5B0F245E930EE10D /* Pods_ReaderKit.framework */; };
@@ -25,7 +27,10 @@
 		861A5BAB1E72F14000560E3A /* EUPDFFocusLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EUPDFFocusLayer.h; sourceTree = "<group>"; };
 		861A5BAC1E72F14000560E3A /* EUPDFFocusLayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = EUPDFFocusLayer.mm; sourceTree = "<group>"; };
 		861A5BAE1E72F21D00560E3A /* ReaderContentPage+ReaderKitHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ReaderContentPage+ReaderKitHook.h"; sourceTree = "<group>"; };
-		861A5BAF1E72F21D00560E3A /* ReaderContentPage+ReaderKitHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ReaderContentPage+ReaderKitHook.m"; sourceTree = "<group>"; };
+		861A5BAF1E72F21D00560E3A /* ReaderContentPage+ReaderKitHook.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "ReaderContentPage+ReaderKitHook.mm"; sourceTree = "<group>"; };
+		861A5BB61E73C6F100560E3A /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
+		861A5BB81E7463F500560E3A /* ReaderKitManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReaderKitManager.h; sourceTree = "<group>"; };
+		861A5BB91E7463F500560E3A /* ReaderKitManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ReaderKitManager.mm; sourceTree = "<group>"; };
 		8977A71E13225EDBC662AED5 /* Pods-ReaderKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReaderKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReaderKit/Pods-ReaderKit.debug.xcconfig"; sourceTree = "<group>"; };
 		B7115EC08ABED68B8DF0372E /* Pods-ReaderKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReaderKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReaderKit/Pods-ReaderKit.release.xcconfig"; sourceTree = "<group>"; };
 		BF3FD0691E7291CD008963FF /* ReaderKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReaderKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -38,7 +43,7 @@
 		BF3FD07B1E7291CD008963FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF3FD07D1E7291CD008963FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF3FD08A1E72A776008963FF /* ReaderContentView+ReaderKitHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ReaderContentView+ReaderKitHook.h"; sourceTree = "<group>"; };
-		BF3FD08B1E72A776008963FF /* ReaderContentView+ReaderKitHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ReaderContentView+ReaderKitHook.m"; sourceTree = "<group>"; };
+		BF3FD08B1E72A776008963FF /* ReaderContentView+ReaderKitHook.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "ReaderContentView+ReaderKitHook.mm"; sourceTree = "<group>"; };
 		BF3FD08D1E72A79D008963FF /* ReaderKitHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReaderKitHook.h; sourceTree = "<group>"; };
 		BF3FD08E1E72A79D008963FF /* ReaderKitHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReaderKitHook.m; sourceTree = "<group>"; };
 		BF3FD0901E72AE47008963FF /* EUMagnifierView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EUMagnifierView.h; sourceTree = "<group>"; };
@@ -126,12 +131,15 @@
 		BF3FD06B1E7291CD008963FF /* ReaderKit */ = {
 			isa = PBXGroup;
 			children = (
+				861A5BB61E73C6F100560E3A /* tessdata */,
 				861A5BB11E72F34B00560E3A /* Langs */,
 				BF3FD0831E7297EA008963FF /* vfrReader */,
 				BF3FD06F1E7291CD008963FF /* AppDelegate.h */,
 				BF3FD0701E7291CD008963FF /* AppDelegate.m */,
 				BF3FD0721E7291CD008963FF /* ReaderKitFileSelectController.h */,
 				BF3FD0731E7291CD008963FF /* ReaderKitFileSelectController.m */,
+				861A5BB81E7463F500560E3A /* ReaderKitManager.h */,
+				861A5BB91E7463F500560E3A /* ReaderKitManager.mm */,
 				BF3FD08D1E72A79D008963FF /* ReaderKitHook.h */,
 				BF3FD08E1E72A79D008963FF /* ReaderKitHook.m */,
 				BF3FD0781E7291CD008963FF /* Assets.xcassets */,
@@ -158,9 +166,9 @@
 				BF3FD0901E72AE47008963FF /* EUMagnifierView.h */,
 				BF3FD0911E72AE47008963FF /* EUMagnifierView.mm */,
 				BF3FD08A1E72A776008963FF /* ReaderContentView+ReaderKitHook.h */,
-				BF3FD08B1E72A776008963FF /* ReaderContentView+ReaderKitHook.m */,
+				BF3FD08B1E72A776008963FF /* ReaderContentView+ReaderKitHook.mm */,
 				861A5BAE1E72F21D00560E3A /* ReaderContentPage+ReaderKitHook.h */,
-				861A5BAF1E72F21D00560E3A /* ReaderContentPage+ReaderKitHook.m */,
+				861A5BAF1E72F21D00560E3A /* ReaderContentPage+ReaderKitHook.mm */,
 			);
 			path = vfrReader;
 			sourceTree = "<group>";
@@ -236,6 +244,7 @@
 			files = (
 				BF3FD07C1E7291CD008963FF /* LaunchScreen.storyboard in Resources */,
 				BF3FD0791E7291CD008963FF /* Assets.xcassets in Resources */,
+				861A5BB71E73C6F100560E3A /* tessdata in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,12 +303,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				861A5BBA1E7463F500560E3A /* ReaderKitManager.mm in Sources */,
 				861A5BAD1E72F14000560E3A /* EUPDFFocusLayer.mm in Sources */,
 				BF3FD0741E7291CD008963FF /* ReaderKitFileSelectController.m in Sources */,
 				BF3FD0711E7291CD008963FF /* AppDelegate.m in Sources */,
 				BF3FD08F1E72A79D008963FF /* ReaderKitHook.m in Sources */,
-				BF3FD08C1E72A776008963FF /* ReaderContentView+ReaderKitHook.m in Sources */,
-				861A5BB01E72F21D00560E3A /* ReaderContentPage+ReaderKitHook.m in Sources */,
+				BF3FD08C1E72A776008963FF /* ReaderContentView+ReaderKitHook.mm in Sources */,
+				861A5BB01E72F21D00560E3A /* ReaderContentPage+ReaderKitHook.mm in Sources */,
 				BF3FD06E1E7291CD008963FF /* main.m in Sources */,
 				BF3FD0921E72AE47008963FF /* EUMagnifierView.mm in Sources */,
 			);

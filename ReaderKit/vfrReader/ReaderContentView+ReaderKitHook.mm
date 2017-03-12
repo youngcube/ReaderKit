@@ -51,9 +51,6 @@ static char magniferLongPressCountKey;
         SEL swiAppear = @selector(hook_initWithFrame:fileURL:page:password:);
         [ReaderKitHook swizzlingInClass:[self class] originalSelector:oriAppear swizzledSelector:swiAppear];
         
-        //        SEL oriDisappear = @selector(viewDidDisappear:);
-        //        SEL swiDisappear = @selector(euhook_viewDidDisappear:);
-        //        [ReaderKitHook swizzlingInClass:[self class] originalSelector:oriDisappear swizzledSelector:swiDisappear];
     });
 }
 
@@ -139,6 +136,18 @@ static char magniferLongPressCountKey;
         default:
             break;
     }    
+}
+
+- (void)showMagnifierAniDidFinished
+{
+    [self.magnifierView setNeedsDisplay];
+}
+- (void)hideMagnifierAniDidFinished
+{
+    [self.magnifierView setHidden:YES];
+    [self.magnifierView removeFromSuperview];
+    if (![self.contentPage.focusLayer isHidden])
+        [self.contentPage doCapture];
 }
 
 

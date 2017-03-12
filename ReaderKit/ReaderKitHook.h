@@ -9,8 +9,14 @@
 #import <Foundation/Foundation.h>
 #import <objc/runtime.h>
 #import <objc/message.h>
+//#import <TesseractOCR/allheaders.h>
+//#import <TesseractOCR/baseapi.h>
+//using namespace tesseract;
 
 @interface ReaderKitHook : NSObject
+
 + (void)swizzlingInClass:(Class)cls originalSelector:(SEL)originalSelector swizzledSelector:(SEL)swizzledSelector;
 @end
+
+
 

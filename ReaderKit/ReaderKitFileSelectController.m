@@ -77,7 +77,10 @@
         NSString* itemPath = [rootPath stringByAppendingPathComponent:item];
         NSDictionary* attribs = [[NSFileManager defaultManager] attributesOfItemAtPath:itemPath error:nil];
         NSString *fileType = [attribs objectForKey:NSFileType];
-        if (NSFileTypeDirectory == fileType)
+        if ([@".epub" rangeOfString:[[itemPath pathExtension] lowercaseString]].location != NSNotFound){
+            [self.fileList addObject:itemPath];
+        }
+        else if (NSFileTypeDirectory == fileType)
         {
             [self emulateAndAddFile:itemPath];
         }
@@ -87,7 +90,7 @@
             {
                 itemPath = [[NSFileManager defaultManager] destinationOfSymbolicLinkAtPath:itemPath error:nil];
             }
-            if ([@".docx.xlsx.pptx.pdf.key.zip.numbers.zip.pages.zip.txt.rtf.rtfd.epub" rangeOfString:[[itemPath pathExtension] lowercaseString]].location != NSNotFound) {
+            if ([@".docx.xlsx.pptx.pdf.key.zip.numbers.zip.pages.zip.txt.rtf.rtfd" rangeOfString:[[itemPath pathExtension] lowercaseString]].location != NSNotFound) {
                 [self.fileList addObject:itemPath];
             }
         }
@@ -99,7 +102,7 @@
     if ([@".epub" rangeOfString:[[filePath pathExtension] lowercaseString]].location != NSNotFound)
     {
         FolioReaderConfig *config = [[FolioReaderConfig alloc] init];
-        [FolioReader presentReaderWithParentViewController:self withEpubPath:filePath andConfig:config shouldRemoveEpub:NO animated:YES];
+        [FolioReader presentReaderWithParentViewController:self withEpubPath:filePath andConfig:config shouldRemoveEpub:YES animated:YES];
     }
     else
     {

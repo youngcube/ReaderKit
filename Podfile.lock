@@ -17,11 +17,13 @@ PODS:
   - RealmSwift (2.4.3):
     - Realm (= 2.4.3)
   - SSZipArchive (1.7)
+  - TesseractOCRiOS (4.0.0)
   - vfrReader (2.8.6)
   - ZFDragableModalTransition (0.6)
 
 DEPENDENCIES:
   - FolioReaderKit
+  - TesseractOCRiOS
   - vfrReader
 
 SPEC CHECKSUMS:
@@ -33,9 +35,10 @@ SPEC CHECKSUMS:
   Realm: e08d60b0048ccccd3949c8c28a92c4db5712d7e9
   RealmSwift: 30d49739ccb3385d201242736ca4dda56aec9dfc
   SSZipArchive: 63f8e11cfcc33e03e4cd666b4359ea8bd6facd0c
+  TesseractOCRiOS: 90638afbe43d082433f2e76b384c7901d23956df
   vfrReader: 94ea739a545e39093c93802ca1c5b203a5df46b1
   ZFDragableModalTransition: 0d294eaaba6edfcb9839595de765f9ca06a4b524
 
-PODFILE CHECKSUM: 04ac3684ca8048555ac4f5ee38545570ea7b1690
+PODFILE CHECKSUM: 9f7d2f941ac7bff3eb002d3c1441640962318705
 
 COCOAPODS: 1.2.0
