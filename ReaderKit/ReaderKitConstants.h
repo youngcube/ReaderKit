@@ -28,5 +28,3 @@ static NSString *const kNotificationReaderKitShouldClearCapturedWord = @"ReaderK
 #ifdef _ESHELPER_
 #define READERKIT_OCR_LANG "spa"
 #endif
-
-#define READERKIT_OCR_LANG "eng"

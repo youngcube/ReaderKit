@@ -16,10 +16,8 @@
 @dynamic magniferLongPressCount;
 @dynamic contentPage;
 
-
 static char magnifierViewKey;
 static char magniferLongPressCountKey;
-
 
 #pragma mark - Property
 - (REKMagnifierView *)magnifierView
@@ -42,15 +40,12 @@ static char magniferLongPressCountKey;
     objc_setAssociatedObject(self, &magniferLongPressCountKey, [NSNumber numberWithInt:magniferLongPressCount],  OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
-
-
 + (void)load {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         SEL oriAppear = @selector(initWithFrame:fileURL:page:password:);
         SEL swiAppear = @selector(hook_initWithFrame:fileURL:page:password:);
         [ReaderKitHook swizzlingInClass:[self class] originalSelector:oriAppear swizzledSelector:swiAppear];
-        
     });
 }
 
@@ -67,7 +62,6 @@ static char magniferLongPressCountKey;
     UILongPressGestureRecognizer *longGesture = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(handleLongPress:)];
     longGesture.minimumPressDuration = 0.2; // too hard to long press
     [self addGestureRecognizer:longGesture];
-    
     return contentView;
 }
 
@@ -142,6 +136,7 @@ static char magniferLongPressCountKey;
 {
     [self.magnifierView setNeedsDisplay];
 }
+
 - (void)hideMagnifierAniDidFinished
 {
     [self.magnifierView setHidden:YES];
@@ -149,6 +144,5 @@ static char magniferLongPressCountKey;
     if (![self.contentPage.focusLayer isHidden])
         [self.contentPage doCapture];
 }
-
 
 @end

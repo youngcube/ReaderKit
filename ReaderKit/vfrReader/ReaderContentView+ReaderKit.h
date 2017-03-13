@@ -10,11 +10,8 @@
 #import <vfrReader/ReaderContentView.h>
 #import "REKMagnifierView.h"
 
-
 @interface ReaderContentView (ReaderKit)
-
 @property (nonatomic, strong) REKMagnifierView *magnifierView;
 @property (nonatomic) int magniferLongPressCount;
 @property (nonatomic, strong) ReaderContentPage *contentPage;
-
 @end

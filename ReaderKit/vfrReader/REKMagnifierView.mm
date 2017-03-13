@@ -10,7 +10,8 @@
 
 @implementation REKMagnifierView
 @synthesize viewToMagnify, touchPoint;
-- (id)initWithFrame:(CGRect)frame {
+- (instancetype)initWithFrame:(CGRect)frame
+{
 	if (self = [super initWithFrame:CGRectMake(0, 0, MAGNIFIER_RECT_WIDTH, MAGNIFIER_RECT_HEIGHT)]) {
 		// make the circle-shape outline with a nice border.
         self.backgroundColor = [UIColor clearColor];
@@ -18,19 +19,22 @@
 	return self;
 }
 
-- (void)setTouchPoint:(CGPoint)pt {
+- (void)setTouchPoint:(CGPoint)pt
+{
 	touchPoint = pt;
 	// whenever touchPoint is set, 
 	// update the position of the magnifier (to just above what's being magnified)
  
     self.frame = CGRectMake(pt.x - MAGNIFIER_RECT_WIDTH/2, pt.y - MAGNIFIER_RECT_HEIGHT - 22, MAGNIFIER_RECT_WIDTH, MAGNIFIER_RECT_HEIGHT);  
 }
--(CGPoint)touchPoint
+
+- (CGPoint)touchPoint
 {
     return touchPoint;
 }
 
-- (void)drawRect:(CGRect)rect {
+- (void)drawRect:(CGRect)rect
+{
 	// here we're just doing some transforms on the view we're magnifying,
 	// and rendering that view directly into this view,
 	// rather than the previous method of copying an image.
@@ -47,10 +51,8 @@
 
 	[self.viewToMagnify.layer renderInContext:ctx];
     CGContextRestoreGState(ctx);
-    [[UIImage imageNamed:@"icon_magnifier"] drawAtPoint:CGPointMake(0, 0)];
+    [[UIImage imageNamed:@"REK_icon_magnifier"] drawAtPoint:CGPointMake(0, 0)];
     rendering = false;
 }
-
-
 
 @end

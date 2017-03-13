@@ -44,7 +44,6 @@ static char focusLayerKey;
         SEL oriSingleTap = @selector(processSingleTap:);
         SEL swiSingleTap = @selector(hook_processSingleTap:);
         [ReaderKitHook swizzlingInClass:[self class] originalSelector:oriSingleTap swizzledSelector:swiSingleTap];
-        
     });
 }
 
@@ -64,7 +63,7 @@ static char focusLayerKey;
     if (![self.focusLayer isHidden]){
         [self.focusLayer setHidden:YES];
         [self.focusLayer setNeedsDisplay];
-//        [[ReaderViewController sharedEUCaptureDelegate] euPDFClearCapturedWord];
+        [[ReaderKitManager sharedInstance].captureDelegate captureDelegateShouldClearCapturedWord];
         return @"handled";
     }
     return [self hook_processSingleTap:recognizer];
@@ -109,9 +108,8 @@ static char focusLayerKey;
     return resultingImage;
 }
 
--(void)hideFocusLayer
+- (void)hideFocusLayer
 {
-    
     [self.focusLayer setHidden:YES];
     [self.focusLayer setNeedsDisplay];
 }
@@ -119,11 +117,8 @@ static char focusLayerKey;
 - (void)doCapture
 {
     CGPoint l = self.focusLayer.position;
-    
     UIImage *image = [self getImagewithTouchLocation:l];
-    
     [self offlineOcrCaptureWithImage:image touchLocation:l];
-    
 }
 
 - (void)offlineOcrCaptureWithImage:(UIImage *)image touchLocation:(CGPoint)l
@@ -142,24 +137,7 @@ static char focusLayerKey;
     CFRelease(data);
     delete it;
     
-    
-    G8Tesseract *tesseract = [[G8Tesseract alloc] initWithLanguage:@READERKIT_OCR_LANG];
-    tesseract.delegate = self;
-    tesseract.image = [[image g8_blackAndWhite] g8_grayScale];
-    tesseract.rect = CGRectMake(0, 0, imageSize.width, imageSize.height);
-    tesseract.maximumRecognitionTime = 2.0;
-    [tesseract recognize];
-    NSString *capText = [tesseract recognizedText];
-    NSString *recoText = [self getASCStringFromLine:capText startPos:[capText length] / 2 breakOnCapital:NO];
-    NSLog(@"g8 = %@", [tesseract recognizedText]);
-    UIImage *threadHolder = [tesseract thresholdedImage];
-
-    return;
-    
-    
     ReaderKitManager *shell = [ReaderKitManager sharedInstance];
-    
-    
     shell.tessOcr->SetImage(imgPix);
     Pixa *pixaTemp = NULL;
     Boxa *boxaTemp = NULL;
@@ -181,8 +159,7 @@ static char focusLayerKey;
                 //isvalid 似乎没有什么作用
                 //int isvalid = shell.tessOcr->IsValidWord([capText EUUTF8String]);
                 //if (*confidenceLevel >= 30) {
-//                capText = [self getASCStringFromLine:capText startPos:[capText length] / 2 breakOnCapital:NO];
-                NSLog(@"reco = %@",capText);
+                capText = [self getASCStringFromLine:capText startPos:[capText length] / 2 breakOnCapital:NO];
                 //}
                 if (/**confidenceLevel >= 30 &&*/
                     [[ReaderKitManager sharedInstance].captureDelegate captureDelegateShouldShowWordCaptured:capText rect:[self convertRect:finalRect toView:nil]])
@@ -211,7 +188,7 @@ static char focusLayerKey;
                     [self performSelector:@selector(hideFocusLayer) withObject:nil afterDelay:1.0];
                 }
                 
-                NSLog(@"%@",capText);
+                NSLog(@"reco = %@",capText);
                 delete []confidenceLevel;
                 break;
                 
@@ -284,37 +261,15 @@ static char focusLayerKey;
     
     CFDataRef data = CGDataProviderCopyData(CGImageGetDataProvider([image CGImage]));
     const UInt8 *imageData = CFDataGetBytePtr(data);
-    
-    
-    
-    
 
-    
-    // You could retrieve more information about recognized text with that methods:
-//    NSArray *characterBoxes = [tesseract recognizedBlocksByIteratorLevel:G8PageIteratorLevelBlock];
-//    G8RecognizedBlock *lastBox = [characterBoxes lastObject];
-//    NSArray *paragraphs = [tesseract recognizedBlocksByIteratorLevel:G8PageIteratorLevelParagraph];
-//    NSArray *characterChoices = tesseract.characterChoices;
-//    UIImage *imageWithBlocks = [tesseract imageWithBlocks:characterBoxes drawText:YES thresholded:NO];
-//    NSLog(@"asd");
-    
-
-    
-    
-    
     ImageThresholder *it = new ImageThresholder();
     it->SetImage(imageData, imageSize.width, imageSize.height, bytes_per_pixel, bytes_per_line);
     PIX *imgPix = it->GetPixRectGrey();
     CFRelease(data);
     delete it;
-//     pixWrite([path EUUTF8String], imgPix, IFF_BMP);
-//    EUAppShell *shell = [EUAppShell sharedShell];
-//    shell.tessOcr->SetImage(imgPix);
     
     ReaderKitManager *shell = [ReaderKitManager sharedInstance];
     shell.tessOcr->SetImage(imgPix);
-    
-    
     Pixa *pixaTemp = NULL;
     Boxa *boxaTemp = NULL;
     boxaTemp = shell.tessOcr->GetWords(&pixaTemp);
@@ -338,7 +293,6 @@ static char focusLayerKey;
                 [self.focusLayer setHidden:NO];
                 [self.focusLayer setNeedsDisplay];
                 break;
-//                 NSLog(@"%@",capText);
             }
             thisBox++;
         }
